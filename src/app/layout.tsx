@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header/Header";
+import Providers from "./Providers";
 
 import "./globals.css";
 
@@ -19,10 +20,12 @@ export default function RootLayout({
         <link rel="icon" href="next.svg" />
       </head>
       <body>
-        <Header />
-        {/* NAV?  */}
-        {/* SEARCH */}
-        {children}
+        <Providers>
+          <Header />
+          {/* NAV?  */}
+          {/* SEARCH */}
+          {children}
+        </Providers>
       </body>
     </html>
   );
