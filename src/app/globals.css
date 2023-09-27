@@ -3,6 +3,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
