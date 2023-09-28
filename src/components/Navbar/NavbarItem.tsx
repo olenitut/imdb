@@ -11,9 +11,6 @@ type Props = {
 const NavbarItem: React.FC<Props> = ({ title, param }) => {
   const searchParams = useSearchParams();
   const filter = searchParams.get("filter");
-  console.log(filter);
-  console.log(param);
-
   return (
     <Link
       href={`/?filter=${param}`}
