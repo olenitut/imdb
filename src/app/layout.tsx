@@ -4,6 +4,7 @@ import Providers from "./Providers";
 import Navbar from "@/components/Navbar/Navbar";
 
 import "./globals.css";
+import Search from "@/components/Search/Search";
 
 export const metadata: Metadata = {
   title: "IMBd Clone",
@@ -24,7 +25,8 @@ export default function RootLayout({
         <Providers>
           <Header />
           <Navbar />
-          {/* SEARCH */}
+          <Search />
+
           {children}
         </Providers>
       </body>
